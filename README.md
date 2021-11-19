@@ -20,7 +20,7 @@ limitations under the License.
 
 # incrmeanabs
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute an [arithmetic mean][arithmetic-mean] of absolute values incrementally.
 
@@ -138,9 +138,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   [`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]: compute an arithmetic mean incrementally.
--   [`@stdlib/stats/incr/mmeanabs`][@stdlib/stats/incr/mmeanabs]: compute a moving arithmetic mean of absolute values incrementally.
--   [`@stdlib/stats/incr/sumabs`][@stdlib/stats/incr/sumabs]: compute a sum of absolute values incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmeanabs`][@stdlib/stats/incr/mmeanabs]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean of absolute values incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/sumabs`][@stdlib/stats/incr/sumabs]</span><span class="delimiter">: </span><span class="description">compute a sum of absolute values incrementally.</span>
 
 </section>
 
@@ -191,8 +191,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-meanabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-meanabs?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-incr-meanabs.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-incr-meanabs/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/

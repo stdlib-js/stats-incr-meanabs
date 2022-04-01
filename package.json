@@ -1,0 +1,40 @@
+{
+  "name": "@stdlib/stats-incr-meanabs",
+  "version": "0.0.0",
+  "description": "Compute an arithmetic mean of absolute values incrementally.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-incr-meanabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "average",
+    "avg",
+    "mean",
+    "arithmetic mean",
+    "central tendency",
+    "incremental",
+    "accumulator",
+    "absolute",
+    "value",
+    "abs",
+    "magnitude",
+    "math.abs"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

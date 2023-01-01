@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,20 +16,26 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var abs = require( '@stdlib/math-base-special-abs' );
-var incrmean = require( '@stdlib/stats-incr-mean' );
-
-
-// MAIN //
+/**
+* If provided a value, returns an updated arithmetic mean; otherwise, returns the current arithmetic mean.
+*
+* ## Notes
+*
+* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
+*
+* @param x - value
+* @returns arithmetic mean of absolute values
+*/
+type accumulator = ( x?: number ) => number | null;
 
 /**
 * Returns an accumulator function which incrementally computes an arithmetic mean of absolute values.
 *
-* @returns {Function} accumulator function
+* @returns accumulator function
 *
 * @example
 * var accumulator = incrmeanabs();
@@ -40,32 +46,18 @@ var incrmean = require( '@stdlib/stats-incr-mean' );
 * mu = accumulator( 2.0 );
 * // returns 2.0
 *
-* mu = accumulator( -5.0 );
-* // returns 3.5
+* mu = accumulator( -3.0 );
+* // returns 2.5
+*
+* mu = accumulator( -4.0 );
+* // returns 3.0
 *
 * mu = accumulator();
-* // returns 3.5
+* // returns 3.0
 */
-function incrmeanabs() {
-	var mean = incrmean();
-	return accumulator;
-
-	/**
-	* If provided a value, the accumulator function returns an updated mean. If not provided a value, the accumulator function returns the current mean.
-	*
-	* @private
-	* @param {number} [x] - new value
-	* @returns {(number|null)} mean value or null
-	*/
-	function accumulator( x ) {
-		if ( arguments.length === 0 ) {
-			return mean();
-		}
-		return mean( abs( x ) );
-	}
-}
+declare function incrmeanabs(): accumulator;
 
 
 // EXPORTS //
 
-module.exports = incrmeanabs;
+export = incrmeanabs;

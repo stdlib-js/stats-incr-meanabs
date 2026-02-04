@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-meanabs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Compute an arithmetic mean of absolute values incrementally.",
   "license": "Apache-2.0",
   "author": {
